@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stacja paliw</title>
+    <link rel="stylesheet" href="styl3.css">
+</head>
+<body>
+    <header>
+        <section id="baner-lewy">
+            <h1>Stacja paliw</h1>
+        </section>
+
+        <section id="baner-prawy">
+            <a href="stacja.html"><img src="home.png"></a>
+            <a href="obliczenia.html"><img src="znak.png"></a>
+        </section>
+    </header>
+    
+    <main>
+        <h3>Oblicz koszt paliwa</h3>
+        <label for="rodzaj">Rodzaj paliwa (1-benzyna, 2-olej napędowy):</label><br>
+        <input type="number" name="rodzja" id="rodzaj"><br>
+        
+        <label for="ilosc">Ile litrów</label><br>
+        <input type="number" name="ilosc" id="ilosc"><br>
+
+        <button onclick="licz();">OBLICZ</button>
+        <p id="koszt"></p>
+        <script>
+            function licz()
+            {
+                var rodzaj = document.getElementById("rodzaj").value;
+                var ilosc = document.getElementById("ilosc").value;
+                var koszt = 0.0;
+
+                switch(rodzaj){
+                    case "1":
+                        koszt = ilosc*4;
+                        break;
+                    case "2":
+                        koszt = ilosc*3.50;
+                        break;
+                }
+                document.getElementById("koszt").innerHTML = "Koszt paliwa: " + koszt + "zł";
+                
+            }
+        </script>
+    </main>
+
+    <section id="lewy">
+        <a href="kwerendy.txt">Pobierz kwerendy</a>
+    </section>
+    
+    <section id="prawy">
+        <img src="samochod.png" alt="samochód">
+    </section>
+
+    <footer>
+        <p>Stronę opracował: maciek</p>
+    </footer>
+</body>
+</html>

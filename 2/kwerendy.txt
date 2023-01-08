@@ -1,0 +1,7 @@
+kw1: INSERT INTO `filmy`(`gatunki_id`, `tytul`, `rok`, `ocena`) VALUES (5, 'Suburbicon', 2017, 5)
+
+kw2: SELECT tytul, gatunki.nazwa FROM `filmy` JOIN gatunki on filmy.gatunki_id=gatunki.id where ocena=6 
+
+kw3: SELECT `tytul`, `rok` FROM `filmy` WHERE `gatunki_id`=3 AND ocena=5
+
+kw4: CREATE TABLE aktorzy (`id` INT NOT NULL AUTO_INCREMENT , `imie` VARCHAR(64) , `nazwisko` VARCHAR(64), PRIMARY KEY (`id`));

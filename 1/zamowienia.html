@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hurtownia</title>
+    <link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+    <section id="logo">
+        <img src="logo.png" alt="hurtownia">
+    </section>
+    <section id="menu">
+        <a href="index.html">Strona główna</a>
+        <a href="zamowienia.html">Zamówienia</a>
+        <a href="blog.html">Blog o kawie</a>
+        <a href="http://gatunki-kawy.pl" target="_blank">Odwiedź także</a>
+    </section>
+
+    <header>
+        <h1>Hurtownia kawy</h1>
+    </header>
+    
+    <section id="lewy">
+        <h2>Oferta</h2>
+        <ol>
+            <li>Kawa palona Arabica</li>
+            <li>Kawa palona Robusta</li>
+            <li>Kawa bezkofeinowa</li>
+            <li id="czwarty">Kawa zielona</li>
+        </ol>
+    </section>
+    <section id="prawy">
+        <p>Podaj numer kawy:<br/>
+        <input type="number" id="nrkawy"><br/>
+        Podaj wagę w dekagramach<br/>
+        <input type="number" id="waga"><br/>
+        <button onclick="koszt();">Zamów</button>
+        <p id="wynik"></p>
+        <script>
+
+            function koszt()
+            {
+                var waga = document.getElementById("waga").value;
+                var nrkawy = document.getElementById("nrkawy").value;
+                var koszt = 0 ;
+                switch(nrkawy){
+                    case "1":
+                        koszt = waga*5;
+                        break;
+                    case "2":
+                        koszt = waga*7;
+                        break;
+                    case "3":
+                        koszt = waga*6;
+                        break;
+                }
+                document.getElementById("wynik").innerHTML = "Koszt zamówienia wynosi: " + koszt + " zł";
+
+
+            }
+
+        </script>
+    </section>
+
+    <footer>
+        <p>Strone przygotowała twoja matka <b>2137</b></p>
+    </footer>
+
+</body>
+</html>
