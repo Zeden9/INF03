@@ -2,6 +2,6 @@ kw1: SELECT `id`, `nazwa`, `wystepowanie` FROM `ryby` WHERE `styl_zycia` = '2'
 
 kw2: SELECT `akwen`, `wojewodztwo` FROM `lowisko` WHERE `rodzaj` = '2' or `rodzaj` = '3'
 
-kw3:
+kw3: 
 
 kw4
