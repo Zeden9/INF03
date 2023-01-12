@@ -1,0 +1,5 @@
+kw1: SELECT `cena` FROM `farby` WHERE `kolor` = "niebieski";
+
+kw2: SELECT   `kolor`, (`cena`/`pojemnosc`) as cena FROM `farby`;
+
+kw3: SELECT kolor FROM `farby` join malowanie on malowanie.id_farby = farby.id_farby where malowanie.id_pomieszczenia = 3

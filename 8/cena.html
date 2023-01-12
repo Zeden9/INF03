@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malarz</title>
+    <link rel="stylesheet" href="styl.css">
+</head>
+<body>
+    <header>
+        <h1><a href="index.html">Koszty farby</a></h1>
+    </header>
+
+    <main>
+        <section id="lewy">
+            <h3>Mieszamy czy wyceniamy?</h3>
+            <a href="mieszamy.html">Mieszamy</a><br>
+            <a href="cena.html">Wyceniamy</a>
+        </section>
+        <section id="prawy">
+            <h3>Obliczanie na podstawie powierzchni zapotrzebowania na farbę</h3>
+            <label for="powierzchnia">Podaj powierzchnię:</label>
+            <input type="number" name="powierzchnia" id="powierzchnia">
+            <button onclick="wiadra();">Policz</button>
+            <p id="wynik"></p>
+
+            <script>
+                function wiadra(){
+                    var powierzchnia = document.getElementById("powierzchnia").value;
+                    document.getElementById("wynik").innerHTML = "Liczba jednolitrowych puszek farby potrzebnych do pomalowania wynosi: " + Math.ceil(powierzchnia/4);
+                }
+            </script>
+        </section>
+    </main>
+
+    <footer>
+        MALARZ<br>
+        Stronę opracował: parobcok
+    </footer>
+</body>
+</html>
