@@ -1,0 +1,45 @@
+*{
+    font-family: Arial;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+}
+
+main{
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+
+#pierwszy{
+    background-color: #483D8B;
+    height: 150px;
+    width: 30%;
+}
+
+#drugi{
+    background-color: #483D8B;
+    color: white;
+    height: 150px;
+    width: 70%;
+}
+
+div.dzien{
+    background-color: #AFEEEE;
+    width: 150px;
+    height: 100px;
+    margin: 3px;
+    border: solid 1px;
+}
+
+footer{
+    background-color: #483D8B;
+    color: white;
+    padding: 10px;
+}
+
+h5{
+    text-align: center;
+}
