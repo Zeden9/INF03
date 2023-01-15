@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zamówienia hurtowe</title>
+    <link rel="stylesheet" href="styl4.css">
+</head>
+<body>
+    <header>
+        <h1>Sieci komputerowe</h1>
+    </header>
+    
+    <main>
+        <div id="lewy">
+            <h2>Aktualizacja i zamówienia materiałów</h2>
+            <p>Do wewnętrznego użytku firmy</p>
+            <img src="obraz.png" alt="sieć komputerowa">
+        </div>
+
+        <div id="prawy">
+            <table>
+                <tr>
+                    <th>Produkt</th>
+                    <th>Jednostka</th>
+                    <th>Dostępna ilość</th>
+                    <th>Aktualizacja</th>
+                    <th>Zamówienie</th>
+                </tr>
+                <tr>
+                    <td id="produkt1">Skrętka U/UTP drut</td>
+                    <td>metr</td>
+                    <td id="ilosc1" class="ilosc">20</td>
+                    <td><button onclick="aktualizuj('ilosc1');">Aktualizuj</button></td>
+                    <td><button onclick="zamow('produkt1');">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="produkt2">Skrętka U/UTP linka</td>
+                    <td>metr</td>
+                    <td id="ilosc2" class="ilosc">2</td>
+                    <td><button onclick="aktualizuj('ilosc2');">Aktualizuj</button></td>
+                    <td><button onclick="zamow('produkt2');">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="produkt3">Wtyki 8P8C</td>
+                    <td>sztuki</td>
+                    <td id="ilosc3" class="ilosc">0</td>
+                    <td><button onclick="aktualizuj('ilosc3');">Aktualizuj</button></td>
+                    <td><button onclick="zamow('produkt3');">Zamów</button></td>
+                </tr>
+                <tr>
+                    <td id="produkt4">Moduły Keystone</td>
+                    <td>sztuki</td>
+                    <td id="ilosc4" class="ilosc">30</td>
+                    <td><button onclick="aktualizuj('ilosc4');">Aktualizuj</button></td>
+                    <td><button onclick="zamow('produkt4');">Zamów</button></td>
+                </tr>
+            </table>
+        </div>
+    </main>
+    <footer>
+        <a href="http://sieci.pl/">Nasza strona internetowa</a>
+        <p>Stronę przygotował Dj skręt jelit</p>
+    </footer>
+
+</body>
+<script src="main.js">
+    braki();
+</script>
+</html>
